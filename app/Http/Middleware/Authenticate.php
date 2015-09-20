@@ -16,17 +16,6 @@ class Authenticate
     protected $auth;
 
     /**
-     * Create a new filter instance.
-     *
-     * @param  Guard  $auth
-     * @return void
-     */
-    public function __construct(AuthRepository $auth)
-    {
-        $this->auth = $auth;
-    }
-
-    /**
      * Handle an incoming request.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -35,7 +24,7 @@ class Authenticate
      */
     public function handle($request, Closure $next)
     {
-        if ($this->auth->check()) {
+        if (Auth::check()) {
             if ($request->ajax()) {
                 return response('Unauthorized.', 401);
             } else {
