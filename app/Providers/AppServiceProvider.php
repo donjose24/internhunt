@@ -22,6 +22,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-		$this->app->bind('App\Repositories\Contracts\AuthRepository','App\Repositories\Sentinel\SentinelAuthRepository');
+		$this->app->bind('App\Core\Contracts\AuthRepository','App\Core\Sentinel\SentinelAuthRepository');
     }
 }
