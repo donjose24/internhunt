@@ -8,5 +8,5 @@ interface CompanyRepository {
 
 	public function update($id, $params);
 
-	public function delete($id):
+	public function delete($id);
 }
