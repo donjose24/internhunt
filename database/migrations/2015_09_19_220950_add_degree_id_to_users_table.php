@@ -28,7 +28,8 @@ class AddDegreeIdToUsersTable extends Migration
     public function down()
     {
 		Schema::table('users', function($table) {
-			$table->dropColumn('degree');
+			$table->dropForeign('users_degree_id_foreign');
+			$table->dropColumn('degree_id');
 		});
     }
 }
