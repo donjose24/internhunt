@@ -1,0 +1,68 @@
+h1 , h3{
+	font-family: 'Lato', 'sans-serif';
+	color:rgb(50,50,50);
+}
+h3 {
+	font-weight:normal;
+}
+.logo {
+	width:130px;
+	height:auto;
+	margin-top:1%;
+}
+.row {
+	max-width:100%;
+}
+/*.top-bar {
+	background-color:#7EA436;
+	border-bottom: 1px solid #7EA436;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	color:#7EA436;
+	background-color:white;
+}*/
+.top-bar-section li:not(.has-form) a:not(.button){
+	font-family: 'Lato', 'sans-serif';
+}
+.cfa {
+	text-align:center;
+	color:white;
+}
+.cfa h1 {
+	color:white;
+	font-family: 'Lato', 'sans-serif';
+}
+body {
+	background:url('/assets/img/cfa-bg.jpeg') no-repeat center center fixed;
+	background-size:cover; 
+}
+.search-box {
+	background-color:rgba(0,0,0,0.6);
+	width:100%;
+	margin:auto;
+	margin-top:5%;
+	padding:5%;
+	border-radius: 3px;
+}
+button, .button {
+	color:white;
+	background-color: #7EA436 ;
+}
+button:hover, .button:hover {
+	background-color: #7EA512;
+}
+.full-width {
+	width:100%;
+}
+.search-btn {
+	padding:15px;
+}
+input[type="text"] {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+input {
+	border:0;
+	border-radius:0;
+}
