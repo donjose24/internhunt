@@ -1,0 +1,29 @@
+{
+  "name": "internhunt",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jmramos02/internhunt",
+  "authors": [
+    "jmramos02 <ramosjosemari@gmail.com>"
+  ],
+  "description": "Internship Management App",
+  "main": "/public/index.php",
+  "moduleType": [],
+  "keywords": [
+    "internship",
+    "ojt",
+    "jobs",
+    "search",
+    "industry",
+    "experience"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ]
+}
