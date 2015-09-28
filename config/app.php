@@ -136,6 +136,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+		Illuminate\Html\HtmlServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -192,7 +193,9 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
 		'Activation' => Cartalyst\Sentinel\Laravel\Facades\Activation::class,
 		'Reminder'   => Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
-
+		
+		'Html'      => Illuminate\Html\HtmlFacade::class,
+		'Form'      => Illuminate\Html\FormFacade::class,
     ],
 
 ];
