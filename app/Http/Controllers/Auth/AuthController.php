@@ -27,14 +27,14 @@ class AuthController extends Controller
     
 	public function getLogin()
 	{
-		return view('welcome');
+		return view('index');
 	}
 
 	public function getLogout()
 	{
 		Auth::logout();
 		Session::flash('notification','User Successfuly Logged Out ');
-		return redirect->guest('auth/login');
+		return redirect('auth/login');
 	}
 
 }
