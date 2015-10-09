@@ -10,6 +10,7 @@
 		{!! Html::style('/components/foundation/css/foundation.css') !!}
 		{!! Html::style('/components/foundation/css/normalize.css') !!}
 		{!! Html::style('/assets/css/app.css') !!}
+        {!! Html::style('/components/foundation-datepicker/css/foundation-datepicker.min.css') !!}
 		{!! Html::script('/components/foundation/js/vendor/modernizr.js') !!}
 		</head>
 		<body>
@@ -47,8 +48,12 @@
 		@yield('content')
 		{!! Html::script('/components/foundation/js/vendor/jquery.js') !!}
 		{!! Html::script('/components/foundation/js/foundation.min.js') !!}
+        {!! Html::script('/components/foundation-datepicker/js/foundation-datepicker.min.js') !!}
 		<script>
 			$(document).foundation();
 		</script>
+        <script>
+            $('.date').fdatepicker();
+        </script>
 	</body>
 </html>

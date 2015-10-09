@@ -40,21 +40,21 @@
                         </div> 
                         <div class="row">
                             <div class="large-12 columns">
-                                {!! Form::text('email','',['placeholder' => 'Email']) !!}
+                                {!! Form::email('email','',['placeholder' => 'Email']) !!}
                             </div>
                         </div>
 					    <div class="row">
                             <div class="large-12 columns">
-                                {!! Form::text('address','',['placeholder' => 'Address']) !!}
+                                {!! Form::password('password',['placeholder' => 'Password here']) !!}
                             </div>
                         </div>
-                        <div class="row">
+                       <div class="row">
                             <div class="large-12 columns">
-                                {!! Form::text('birthdate','',['placeholder' => 'Birthdate']) !!}
+                                {!! Form::password('password_confirmation',['placeholder' => 'Confirm Password']) !!}
                             </div>
-                        </div>
-
-	                    <button class="button expand">Register</button>
+                        </div> 	
+                        <i> <small>By clicking Sign Up, you agree to our Terms and that you have read our Data Policy. </small></i>
+                        <button class="button expand">Sign Up</button>
 						{!! Form::close()!!}
 				</div>
 			</div>
