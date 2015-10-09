@@ -27,13 +27,13 @@
 				<!-- Right Nav Section -->
 				<ul class="right">
 					<li>
-						<a href="#"><i class="fa fa-home"></i> Home</a>
+						<a href="/"><i class="fa fa-home"></i> Home</a>
 					</li>
 					<li>
-						<a href="#"><i class="fa fa-lock"></i> Sign In</a>
+                        <a href="{!! URL::to('sign-in') !!}"><i class="fa fa-lock"></i> Sign In</a>
 					</li>
 					<li>
-						<a href="#"><i class="fa fa-pencil-square-o"></i> Register</a>
+						<a href="{!! URL::to('register') !!}"><i class="fa fa-pencil-square-o"></i> Register</a>
 					</li>
 					<li>
 						<a href="#"><i class="fa fa-users"></i> About Us</a>
@@ -49,7 +49,12 @@
 		{!! Html::script('/components/foundation/js/vendor/jquery.js') !!}
 		{!! Html::script('/components/foundation/js/foundation.min.js') !!}
         {!! Html::script('/components/foundation-datepicker/js/foundation-datepicker.min.js') !!}
-		<script>
+		 <div class="row">
+            <div class="footer large-12 columns">
+                &copy; Copyright 2015 
+            </div>
+        </div>
+        <script>
 			$(document).foundation();
 		</script>
         <script>

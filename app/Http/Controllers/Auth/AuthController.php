@@ -14,6 +14,7 @@ class AuthController extends Controller
     public function __construct()
     {
         $this->middleware('guest', ['except' => 'getLogout']);
+
     }
 
     protected function validator(array $data)
@@ -27,7 +28,7 @@ class AuthController extends Controller
     
 	public function getLogin()
 	{
-		return view('index');
+		return view('login');
 	}
 
 	public function getLogout()
@@ -36,5 +37,10 @@ class AuthController extends Controller
 		Session::flash('notification','User Successfuly Logged Out ');
 		return redirect('auth/login');
 	}
+
+    public function getRegister()
+    {
+        return view('register');
+    }
 
 }

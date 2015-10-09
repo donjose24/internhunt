@@ -1,32 +1,16 @@
 @extends('layouts.guest')
 
 @section('header')
-	<title>Homepage</title>
+    <title>Register</title>
 @stop
 
 @section('content')
-	<div class="container banner">
-        <div class="row">
-            <div class="large-6 columns homepage-grid">
-                <h1>Welcome to Internhunt!</h1>
-                <div class="banner-div">
-                    <div class="row">
-                        <div class="large-4 columns">
-                            <i class="fa fa-search banner-image" style="color:#8e44ad"></i>
-                            Get discovered by top companies
-                        </div>
-                        <div class="large-4 columns">
-                            <i class="fa fa-rocket banner-image" style="color:#27ae60"></i> 
-                            Take your skills to a whole new level!
-                        </div>
-                     <div class="large-4 columns">
-                        <i class="fa fa-sitemap banner-image" style="color:#d35400"></i>
-                            Build your network ang get noticed fast
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="large-4 columns">
+            &nbsp;    
         </div>
-			<div class="large-5 columns cfa homepage-grid">
+        <div class="large-4 columns cfa homepage-grid">
 				<div class="register-box">
 					<h1>Sign Up</h1>
 						{!! Form::open(['url' => 'register', 'method' => 'get'])!!}
@@ -57,10 +41,9 @@
                         <button class="button expand">Sign Up</button>
 						{!! Form::close()!!}
 				</div>
-			</div>
-            <div class="large-1 columns">
-                &nbsp;
-            </div>
-		</div>
-	</div>
+			</div> <div class="large-4 columns">
+           &nbsp; 
+        </div>
+    </div>
+</div>
 @stop
