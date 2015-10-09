@@ -25,5 +25,8 @@
     "public/components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "sweetalert": "~1.1.0"
+  }
 }
