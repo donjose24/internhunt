@@ -6,6 +6,7 @@
 		@yield('header')
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		{!! Html::style('/components/foundation/css/foundation.css') !!}
 		{!! Html::style('/components/foundation/css/normalize.css') !!}
 		{!! Html::style('/assets/css/app.css') !!}
@@ -18,7 +19,7 @@
 				<h1><a href="#">{!! Html::image('/assets/img/logo.png','logo',['class' => 'logo']) !!}</a></h1>
 				</li>
 				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 			</ul>
 
 			<section class="top-bar-section">
