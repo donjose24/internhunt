@@ -1,6 +1,13 @@
 *{
     font-family:'Lato', sans-serif;
 }
+.banner {
+    height:100vh;
+}
+.front-banner {
+    background: url('/assets/img/bg.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
 h1 , h3{
 	font-family: 'Lato', sans-serif;
 	color:#333333;
@@ -16,15 +23,24 @@ h3 {
 .row {
 	max-width:100%;
 }
-/*.top-bar {
-	background-color:#7EA436;
-	border-bottom: 1px solid #7EA436;
+.top-bar {
+    position:fixed;
+    padding-bottom:4%;
+    z-index:99999;
+    width:100%;
+	background-color:#2c3e50;
+    border-bottom:2px solid white;
 }
-
+.top-bar-section li:not(.has-form) a:not(.button) {
+    color:white;
+    background-color:#2c3e50;
+}
 .top-bar-section li:not(.has-form) a:not(.button):hover {
-	color:#7EA436;
-	background-color:white;
-}*/
+    color:#2c3e50;
+    background-color:#2c3e50;
+    text-decoration:underline;
+    background-color:white;
+}
 .top-bar-section li:not(.has-form) a:not(.button){
 	font-family: 'Open Sans', sans-serif;
 }
@@ -35,11 +51,6 @@ h3 {
 .cfa h1 {
 	font-family: 'Open Sans', sans-serif;
 }
-body {
-    background-color: #EDF0F5;
-/*	background:url('/assets/img/cfa-bg.jpeg') no-repeat center center fixed;
-	background-size:cover; */
-}
 .register-box {
     text-align:left;
     color:#555;
@@ -47,11 +58,12 @@ body {
 button, .button {
     font-weight:bold;
 	color:white;
+    text-align:center;
     font-family: 'Open Sans';
-	background-color: #7EA436 ;
+	background-color: #2980b9 ;
 }
 button:hover, .button:hover {
-	background-color: #7EA512;
+	background-color: #3498db;
 }
 .full-width {
 	width:100%;
@@ -63,15 +75,19 @@ button:hover, .button:hover {
 .homepage-grid {
     padding:5%;
 }
+.banner-2{
+    background-color:#2c3e50;
+    color:white;
+}
+.banner-2 h1 {
+    color:white;
+}
 .footer {
-    background-color:#333;
     color:white;
     text-align:center;
     font-family:'Open Sans', 'sans-serif';
-    position:fixed;
-    bottom:0;
-    padding:5px;
     font-size:11px;
+    background-color:#2c3e50;
 }
 input::-webkit-input-placeholder {
     color: rgb(180,180,180) !important;
@@ -107,4 +123,14 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 .banner-image {
     display:block;
     font-size:120px;
+}
+.search-box {
+    width:60vw;
+    margin-top:10%;
+    position:relative;
+    left:20%;
+    color:white;
+    padding:3%;
+    background-color:rgba(50,50,50,0.7);
+    border-radius:5px;
 }
