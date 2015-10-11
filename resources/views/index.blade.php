@@ -10,7 +10,7 @@
         <div class="row">
             <div class="large-12 columns">
                 <div class="search-box">
-                    <h1 style="color:white">What do You Want to Be?</h1>
+                    <h1>What do You Want to Be?</h1>
                     <input type="text">
                     <input type="submit" value="Find Internships Now" class="button full-width">
                 </div>
@@ -24,15 +24,15 @@
                 <div class="banner-div">
                     <div class="row">
                         <div class="large-4 columns">
-                            <i class="fa fa-search banner-image" style="color:white"></i>
+                            <i class="fa fa-search banner-image" style="color:#F5DA55"></i>
                             Get discovered by top companies
                         </div>
                         <div class="large-4 columns">
-                            <i class="fa fa-rocket banner-image" style="color:white"></i> 
+                            <i class="fa fa-rocket banner-image" style="color:#F5DA55"></i> 
                             Take your skills to a whole new level!
                         </div>
                         <div class="large-4 columns">
-                            <i class="fa fa-sitemap banner-image" style="color:white"></i>
+                            <i class="fa fa-sitemap banner-image" style="color:#F5DA55"></i>
                             Build your network ang get noticed fast
                         </div>
                     </div>
@@ -65,7 +65,6 @@
                                 {!! Form::password('password_confirmation',['placeholder' => 'Confirm Password']) !!}
                             </div>
                         </div> 	
-                        <i style="color:white;"> <small>By clicking Sign Up, you agree to our Terms and that you have read our Data Policy. </small></i>
                         <button class="button expand">Sign Up</button>
                         {!! Form::close()!!}
                     </div>
