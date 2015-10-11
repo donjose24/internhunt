@@ -5,7 +5,7 @@
 @stop
 
 @section('content')
-<div class="container">
+<div class="container  banner banner-2">
     <div class="row">
         <div class="large-4 columns">
             &nbsp;    

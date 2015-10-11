@@ -9,6 +9,7 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		{!! Html::style('/components/foundation/css/foundation.css') !!}
 		{!! Html::style('/components/foundation/css/normalize.css') !!}
+        {!! Html::style('/components/fullpage.js/jquery.fullPage.css') !!}
 		{!! Html::style('/assets/css/app.css') !!}
         {!! Html::style('/components/foundation-datepicker/css/foundation-datepicker.min.css') !!}
 		{!! Html::script('/components/foundation/js/vendor/modernizr.js') !!}
@@ -17,6 +18,7 @@
 		<nav class="top-bar" data-topbar role="navigation">
 			<ul class="title-area">
 				<li class="name">
+                <img src="/assets/img/logo.png" alt="Internhunt" class="logo">
 				</li>
 				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 				<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
@@ -48,9 +50,31 @@
 		{!! Html::script('/components/foundation/js/vendor/jquery.js') !!}
 		{!! Html::script('/components/foundation/js/foundation.min.js') !!}
         {!! Html::script('/components/foundation-datepicker/js/foundation-datepicker.min.js') !!}
-		 <div class="row">
-            <div class="footer large-12 columns">
-                &copy; Copyright 2015 
+        {!! Html::script('/components/fullpage.js/jquery.fullPage.min.js') !!}
+		 <div class="row footer-row">
+             <div class="footer large-3 columns">
+                 <ul class="social">
+                     <li><i class="fa fa-facebook-official social-icon"></i>
+                     </li>
+                 </ul>
+             </div>
+            <div class="footer large-3 columns">
+                 <ul class="social">
+                     <li><i class="fa fa-twitter-square social-icon"></i>
+                     </li>
+                 </ul> 
+            </div>
+            <div class="footer large-3 columns">
+                <ul class="social">
+                     <li><i class="fa fa-linkedin social-icon"></i>
+                     </li>
+                 </ul> 
+            </div>
+             <div class="footer large-3 columns">
+                <small class="footer-small"> &copy; Copyright 2015 
+                <br>
+                
+                3rd Flr Shuntze Building Salcedo Village, Makati City, Philippines</small>
             </div>
         </div>
         <script>
