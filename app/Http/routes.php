@@ -14,5 +14,3 @@
 Route::get('/', function(){
     return view('index');
 });
-Route::get('/register','Auth\AuthController@getRegister');
-Route::get('/sign-in','Auth\AuthController@getLogin');
